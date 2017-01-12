@@ -398,7 +398,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        b = d.firstChild;
 	        b.style.behavior = "url(#default#VML)";
 	        if (!(b && typeof b.adj == "object")) {
-	            return (R.type = E);
+		   	R.type = E;
+                        //return (R.type = E); ie8 error.Return Raphael define function.
 	        }
 	        d = null;
 	    }
